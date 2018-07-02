@@ -8,5 +8,9 @@ fetch(`${url}/recipes`, {
         token: token,
       }
 }).then((res) => {
-    console.log(res.json().then((data) => allRecipe.innerHTML = data.recipes));
+    console.log(res.json().then((data) => {
+        const recipe = data.recipes.map((val) => {
+            
+        })
+    }));
 })
