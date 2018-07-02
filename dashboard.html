@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RECIPA | Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+</head>
+<body id="offers-body">
+
+    <div class="modal" id="add-offer-modal"><!--ADD OFFER MODAL STARTS-->
+        <div class="modal-content animate">
+            <form action="#" method="POST">
+                <div class="row">
+                    <p class="success-message small center-text"></p>
+                    <div class="co-xl-12 co-lg-12 co-md-12 co-sm-12">
+                        <p class="smaller">Name <span class="error-message">  </span> </p>
+                        <input type="text" name="name">
+                    </div>
+
+                    <div class="co-xl-6 co-lg-6 co-md-6 co-sm-6">
+                        <p class="smaller">Description <span class="error-message">  </span> </p>
+                        <input type="text" name="description">
+                    </div>
+
+                    <div class="co-xl-6 co-lg-6 co-md-6 co-sm-6">
+                        <p class="smaller">Image Url <span class="error-message">  </span> </p>
+                        <input type="text" name="img_url">
+                    </div>
+
+                    <div class="co-xl-12 co-lg-12 co-md-12 co-sm-12">
+                        <p class="smaller">Ingredients <span class="error-message">  </span> </p>
+                        <input type="text" name="ingredients" placeholder="comma separated values">
+                    </div>
+
+                    <div class="co-xl-12 co-lg-12 co-md-12 co-sm-12">
+                        <p class="smaller">Instructions <span class="error-message">  </span> </p>
+                        <input type="text" name="instructions"  placeholder="comma separated values">
+                    </div>
+
+                    <div class="co-xl-12 co-lg-12 co-md-12 co-sm-12 right-text">
+                        <button type="button" class="button button-white close">CLOSE</button>                        
+                        <button type="submit" class="button button-blue create">CREATE</button>                      
+                    </div>
+                    
+                    
+                </div>
+            </form>
+        </div>
+    </div><!--OFFER A RIDE MODAL END-->
+
+    <div class="modal" id="detail-modal"><!--RIDE DETAIL MODAL STARTS-->
+        <div class="modal-content animate">
+            <div class="tile">
+                <div class="tile-heading center-text">
+
+                </div>
+
+                <div class="tile-body">
+                    <div class="row">
+                        <div class="co-xl-6 co-lg-6 co-md-6 co-sm-6 co-xs-6 center-text border">
+                            <p class="data-heading small">Date</p>
+                            <p class="small date">13/6/18</p>
+                        </div>
+                        <div class="co-xl-6 co-lg-6 co-md-6 co-sm-6 co-xs-6 center-text">
+                            <p class="data-heading small">Time</p>
+                            <p class="small time">12:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile-body not-first center-text">
+                    <p class="data-heading small">Driver</p>
+                    <p class="small driver">Philip Newman</p>
+                </div>
+
+                <div class="tile-footer center-text">
+                    <button class="button button-blue close">CLOSE</button>
+                    <button class="button button-white join">JOIN</button>
+                </div>
+            </div>
+        </div>
+    </div><!--RIDE DETAIL MODAL ENDS-->
+    
+    <nav class="navigation"><!--NAVIGATIONAL BAR STARTS-->
+        <div class="navbar wrapper">
+            <p class="navbar-toggle small">MENU</p>
+            <ul class="nav-items nav-left">
+                <li class="nav-item"> <a href="./index.html">RECIPA</a> </li>
+            </ul>
+            <ul class="nav-items nav-right">
+                <li class="nav-item"> <a href="./dashboard.html">Home</a> </li>
+                <li class="nav-item"> <a href="#">CREATE RECIPE</a> </li>
+                <li class="nav-item"> <a href="./index.html">Logout</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+
+
+    <main class="wrapper dropdown">
+        <div class="row">
+
+            <div class="co-xl-3 co-lg-3 co-md-4 co-sm-6">
+                <div class="tile">
+                    <div class="tile-heading center-text">
+                        <h4>recipes.name</span></h4>
+                    </div>
+
+                    <div class="tile-body">
+                        <div class="row">
+                            <p id="description"> DESCRIPTION </p>
+                            <br>
+                            <p> creator: User.username </p>
+                        </div>
+
+                    </div>
+
+                    <div class="tile-footer center-text">
+                        <button data-recipe-info='' class="button button-blue view">VIEW</button>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </main>
+
+    <script src="./js/jquery.min.js"></script>  
+    <script src="./js/main.js"></script>    
+</body>
+</html>
